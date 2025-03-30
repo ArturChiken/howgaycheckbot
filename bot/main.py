@@ -85,7 +85,7 @@ async def handle_inline_query(inline_query: types.InlineQuery):
     await bot.answer_inline_query(
         inline_query.id,
         results=results,
-        cache_time=20
+        cache_time=0
     )
 
 
